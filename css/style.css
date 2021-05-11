@@ -1,0 +1,358 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+}
+
+.section-header {
+    display: inline-block;
+    position: relative;
+    border-radius: 3px;
+    color: white;
+    opacity: 0;
+    transition-delay: 1s;
+    margin-bottom: 0;
+    left: 5em;
+    transition: opacity 1s, left 800ms;
+}
+
+.animated-underline {
+    position: absolute;
+    width: 7rem;
+    border: 2px solid gold;
+    left: -webkit-calc(50% - 3.5rem);
+    margin-top: -.1rem;
+    transform: scale(0, 1);
+    opacity: 0;
+    transition-delay: 1s;
+    transition: transform ease-out 1000ms, opacity 1000ms;
+}
+
+.skill-header {
+    font-size: 1.4em;
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    border-radius: 3px;
+    color: white;
+    opacity: 0;
+    transition-delay: 1s;
+    margin-bottom: .5em;
+    left: -3em;
+    transition: opacity 1s, left 800ms;
+}
+
+
+.progress {
+    margin: 0 0 3em 0;
+    position: relative;
+    left: 5em;
+    opacity: 0;
+    transition: 2s;
+    height: 1.6em;
+    overflow: hidden;
+    transition: left 800ms, opacity 1s;
+}
+
+.progress-bar {
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+    font-size: small;
+    overflow: hidden;
+}
+
+
+/* Particles-JS and Animated Typer */
+
+.animated-typer {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    margin-top: -105px;
+}
+
+.cursor {
+    font-size: 1.28em;
+    display: inline;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+#intro-name {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 0;
+}
+
+#intro-typed {
+    color: gold;
+    font-size: 2.5rem;
+}
+
+
+/* Navbar */
+
+nav.navbar {
+    background-color: white;
+    opacity: 100%;
+    padding: 0;
+    border-bottom: 2px solid gold;
+}
+
+nav.navbar a {
+    color: white;
+    transition:all .5s ease;
+}
+
+nav.navbar a:hover {
+    font-weight: 600;
+    transform: scale(1.1);
+}
+
+
+/* Main Content */
+
+
+/* About Me */
+
+div.about-me {
+    padding-top: 6rem;
+}
+
+.scroll-div {
+    text-align: center;
+    overflow: hidden;
+}
+
+div.no-gutters {
+    /* flex-direction: column; */
+    background-color: transparent;
+    margin: 0;
+}
+
+.card-img {
+    max-height: 300px;
+    max-width: 300px;
+    overflow: hidden;
+}
+
+
+#card {
+    text-align: center;
+}
+
+.col-md-6 div.card-body {
+    padding: 10px;
+}
+
+#intro-text {
+    font-size: 1.2em;
+    color: white;
+    padding: 0 20px;
+}
+
+.skills {
+    overflow: hidden;
+}
+
+div.mx-auto {
+    color: white;
+}
+
+div.mx-auto {
+    border: 0;
+    background-color: transparent;
+}
+
+div.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.socials a {
+    padding: 6px;
+}
+
+.icon {
+    padding: 9px;
+    border-radius: 10px;
+    color: white;
+    transition: color ease-in .1s;
+}
+
+.icon:hover {
+    color: gold;
+}
+
+/* Projects */
+
+#b {
+    margin: auto;
+    margin-top: 1em;
+}
+
+#b .section-header {
+    display: block;
+    width: 100%;
+    padding-top: 2em;
+    color: white;
+}
+
+div.card {
+    margin: 2px;
+}
+
+img.card-img-top {
+    align-self: center;
+    margin-top: 2px;
+    border-radius: 3px;
+    padding: 0 2px;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+div.row div.card {
+    min-width: 23%;
+    max-width: 15.130em;
+    border: 1px gold solid;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    margin: .8em;
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+    transition: 1s transform, 1s opacity;
+}
+
+#b div.card-body {
+    position: relative;
+}
+
+#b p.card-text {
+    margin: .8em;
+}
+
+.footer {
+    text-align: center;
+    margin: 7em 0 0 0;
+    width: 100%;
+    background-color: #343a40;
+    justify-content: center;
+    border-top: 2px solid gold;
+    box-sizing: border-box;
+}
+
+.outro {
+    box-sizing: border-box;
+    padding: 2em;
+    padding-top: 1em;
+    height: 100%;
+}
+
+.outro a:hover {
+    color: gold;
+    text-decoration: underline gold;
+}
+
+.footer h1 {
+    font-weight: bolder;
+    color: white;
+    font-size: .8em;
+    margin: 0;
+    padding-top: 1em;
+}
+
+.highlight {
+    color: gold;
+}
+
+.btn-primary {
+    font-weight: bolder;
+    background-color: transparent;
+    border: 2px solid gold;
+    position: relative;
+    color: gold;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    border: 2px solid gold;
+    color: white;
+}
+
+.btn-top::after {
+    content: '';
+    position: absolute;
+    top: 0em;
+    left: 0;
+    right: 0;
+    z-index: -212;
+    height: 0;
+    width: 100%;
+    background-color: gold;
+    border-radius: 0 0 50% 50%;
+    transition: height 1s, width 1s;
+}
+
+.btn-top:hover::after {
+    height: 200%;
+}
+
+.btn-bottom::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -212;
+    height: 0;
+    width: 100%;
+    background-color: gold;
+    border-radius: 50% 50% 0 0;
+    transition: height 1s, width 1s;
+}
+
+.btn-bottom:hover::after {
+    height: 200%;
+}
+
+@keyframes blink {
+    from {
+        color: inherit;
+    }
+
+    to {
+        color: transparent;
+    }
+}
+
+@media (max-width:991px) {
+    .progress {
+        margin-bottom: 1.5em;
+    }
+}
+
+@media (max-width:351px) {
+    .card-title {
+        font-size: 1.8em;
+    }
+
+    #intro-text {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width:251px) {
+    .card-title {
+        font-size: 1.5em;
+    }
+
+    #intro-text {
+        font-size: 1em;
+    }
+}
